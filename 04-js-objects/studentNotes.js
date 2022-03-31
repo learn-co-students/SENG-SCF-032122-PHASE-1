@@ -4,4 +4,19 @@
 
 // Running the file ```node notes.js``` (without the backticks) will allow you to explore/play around with code. Make sure you have cd'ed into the inner folder before you do this.
 
-console.log("hi there!!")
+console.log('hi there!!');
+
+const pokemon = {
+    name: 'articuno',
+    img: 'https://www.giantbomb.com/images/1300-1892690',
+    likes: 0,
+};
+
+console.log(pokemon.name);
+console.log(pokemon.img);
+
+function increaseValue(obj, key) {
+    return (obj[key] += 1);
+}
+
+increaseValue(pokemon, 'likes');
